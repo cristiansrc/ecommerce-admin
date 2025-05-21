@@ -1,0 +1,26 @@
+export default {
+    category: {
+        id: 0,
+        name: '',
+        description: '',
+        icon: '',
+    },
+    categories: [],
+    idCategory: 0,
+    // data fetching state
+    isFetchingGetCategories: false,
+    isSuccessGetCategories: false,
+    isErrorGetCategories: false,
+    isFetchingCreateCategory: false,
+    isSuccessCreateCategory: false,
+    isErrorCreateCategory: false,
+    isFetchingUpdateCategory: false,
+    isSuccessUpdateCategory: false,
+    isErrorUpdateCategory: false,
+    isFetchingGetCategory: false,
+    isSuccessGetCategory: false,
+    isErrorGetCategory: false,
+    isFetchingDeleteCategory: false,
+    isSuccessDeleteCategory: false,
+    isErrorDeleteCategory: false,
+} 
