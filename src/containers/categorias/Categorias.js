@@ -98,10 +98,6 @@ export const Categorias = () => {
     }, [visibleModalDelete]);
 
     const categoriesActions = useMemo(() => {
-        if(categories.size > 0){
-            return [];
-        }
-
         return categories.map(category => ({
             ...category,
             actions: <TableActions 
