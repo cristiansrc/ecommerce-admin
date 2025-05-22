@@ -116,10 +116,6 @@ export const Productos = () => {
     }, [visibleModalDelete]);
 
     const productsFunctions = useMemo(() => {
-        if(products.size === 0 || categories.size === 0){
-            return [];
-        }
-
         return products.map(pro => ({
             ...pro,
             genderName: pro.gender === 'm' ? 'Hombre' : 'Mujer',

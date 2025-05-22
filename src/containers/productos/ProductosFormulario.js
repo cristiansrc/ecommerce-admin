@@ -98,7 +98,7 @@ export const ProductosFormulario = () => {
             value: '',
         }; 
 
-        if(categories.size === 0){
+        if(categories.length === 0){
             return [ defaultOptions ];
         }
 
