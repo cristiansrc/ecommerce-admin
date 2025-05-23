@@ -14,7 +14,7 @@ function* getProducts() {
 
 function* getProduct({ payload }) {
     yield put(productActions.getProductPending());
-    const { data, error } = yield msproduct.get(`/simple/${payload}`);
+    const { data, error } = yield msproduct.get(`/${payload}`);
     if (error.code !== 200) {
         yield put(productActions.getProductError());
     } else {

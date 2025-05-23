@@ -167,10 +167,10 @@ export const Imagenes = ({ product }) => {
     }, [product.id]);
 
     useEffect(() => {
-        if(isSuccessCreateProductImage || isSuccessDeleteProductImage){
+        if((isSuccessCreateProductImage || isSuccessDeleteProductImage) &&  product.id > 0){
             getImages();
         }
-    }, [isSuccessCreateProductImage, isSuccessDeleteProductImage]);
+    }, [isSuccessCreateProductImage, isSuccessDeleteProductImage, product.id]);
 
     
     return(

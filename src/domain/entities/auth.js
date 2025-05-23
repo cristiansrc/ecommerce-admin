@@ -3,7 +3,7 @@ export default {
     isWrongCredentials: false,
     name: '',
     lastName: '',
-    mail: '',
+    email: '',
     authorization: '',
     // data fetching state
     isFetchingGetToken: false,
