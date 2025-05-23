@@ -5,7 +5,7 @@ import { put, spawn, takeLatest } from 'redux-saga/effects';
 function* getToken({ payload }) {
     yield put(authActions.getTokenPending());
     const {data, error} = yield msauth.post('', {
-        mail: payload.email,
+        email: payload.email,
         password: payload.password
     });
 

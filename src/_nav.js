@@ -21,13 +21,6 @@ const _nav = [
     to: '/categorias',
     icon: <CIcon icon={cilAddressBook} customClassName="nav-icon" />,
   
-  },
-  {
-    component: CNavItem,
-    name: 'Facturas',
-    to: '/facturas',
-    icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
-  
   }
 ]
 
